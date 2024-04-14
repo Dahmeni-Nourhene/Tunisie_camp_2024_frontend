@@ -1,0 +1,16 @@
+<h2>Create Feedback</h2>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="comment">Comment:</label>
+    <input type="text" id="comment" name="comment" [(ngModel)]="feedback.commentaire">
+  </div>
+  <div>
+    <label for="date">Date:</label>
+    <input type="text" id="date" name="date" [(ngModel)]="feedback.date">
+  </div>
+  <div>
+    <label for="note">Note:</label>
+    <input type="number" id="note" name="note" [(ngModel)]="feedback.note">
+  </div>
+  <button type="submit">Submit</button>
+</form>
